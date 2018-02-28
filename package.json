@@ -1,0 +1,70 @@
+{
+  "name": "react-scooter",
+  "version": "0.0.1",
+  "homepage": "https://ivoilic.github.io/react-scooter",
+  "author": "Ivo Ilić <admin@ivoilic.com> (http://ivoilic.com)",
+  "description": "React components for the Scooter CSS framework",
+  "contributors": [
+    {
+      "name": "Ivo Ilić",
+      "email": "admin@ivoilic.com"
+    }
+  ],
+  "main": "lib/components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:ivoilic/react-scooter.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "framework",
+    "scooter",
+    "react-scooter",
+    "react",
+    "ui",
+    "ui-kit",
+	"dropbox"
+  ],
+  "bugs": {
+    "url": "https://github.com/ivoilic/react-scooter/issues"
+  },
+  "dependencies": {
+    "scooter-css": "^2.0.0",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.14",
+    "react-styleguidist": "^6.0.27"
+  },
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "predeploy": "npm run styleguide:build",
+    "deploy": "gh-pages -d styleguide",
+    "build": "babel src -d lib",
+    "lint": "eslint src/components/**; exit 0",
+    "lint:watch": "esw -w src/**",
+    "prepublish": "npm run build",
+    "publish": "git push origin && git push origin --tags",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  }
+}
