@@ -10,6 +10,7 @@ const Button = ({
 	disabled,
 	full,
 	big,
+	enabled,
 	className,
 	...props
 }) => {
@@ -22,7 +23,7 @@ const Button = ({
 	'c-btn--big': big
   }, className)
   
-  return <Btn className={classes} {...props} disabled={props['dis'] && true}/>
+  return <Btn className={classes} {...props} disabled={disabled && !enabled}/>
 }
 
 Button.displayName = 'Button'
@@ -40,7 +41,7 @@ Button.propTypes = {
 	disabled: PropTypes.bool,
 	full: PropTypes.bool,
 	big: PropTypes.bool,
-	dis: PropTypes.bool,
+	enabled: PropTypes.bool,
 
 }
 
