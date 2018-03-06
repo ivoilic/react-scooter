@@ -1,6 +1,6 @@
 # React-Scooter
 
-![react-scooter-logo]()
+![react-scooter-logo](https://raw.githubusercontent.com/ivoilic/react-scooter/master/react-scooter.png)
 
 React components for the Scooter CSS framework
 
