@@ -1,6 +1,8 @@
+<img align="right" width="200" src="https://raw.githubusercontent.com/ivoilic/react-scooter/master/react-scooter.png"/>
+
 # React-Scooter
 
-![react-scooter-logo](https://raw.githubusercontent.com/ivoilic/react-scooter/master/react-scooter.png)
+[![Dependency Status](https://img.shields.io/david/ivoilic/react-scooter.svg?style=flat-square)](https://david-dm.org/ivoilic/react-scooter)
 
 React components for the Scooter CSS framework
 
