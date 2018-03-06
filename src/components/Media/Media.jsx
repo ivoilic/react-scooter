@@ -6,15 +6,12 @@ const Media = ({
 	as: Md,
 	className,
 	children,
-	src,
-	width,
-	height,
-	alt,
+	image,
 	...props
 }) => {
   const classes = classNames('o-media',className)
   
-  return <Md className={classes} {...props}><img className="o-media__img" src={src} width={width} height={height} alt={alt} /><div className="o-media__body">{children}</div></Md>
+  return <Md className={classes} {...props}><div className="o-media__img" >{image}</div><div className="o-media__body">{children}</div></Md>
 }
 
 Media.displayName = 'Media'
@@ -26,10 +23,7 @@ Media.defaultProps = {
 Media.propTypes = {
 	as: PropTypes.node,
 	className: PropTypes.string,
-	alt: PropTypes.string,
-	src: PropTypes.string,
-	width: PropTypes.string,
-	height: PropTypes.string,
+	image: PropTypes.object
 }
 
 export default Media

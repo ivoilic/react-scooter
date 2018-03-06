@@ -6,7 +6,7 @@ const Flag = ({
 	as: Flg,
 	className,
 	children,
-	media,
+	image,
 	reversed,
 	top,
 	bottom,
@@ -18,7 +18,7 @@ const Flag = ({
 	  "o-flag--rev": reversed
   }, className)
   
-  let md = <div class="o-flag__fix">{media}</div>;
+  let md = <div class="o-flag__fix">{image}</div>;
   
 	if (reversed){
 		return <Flg className={classes} {...props}><div className="o-flag__flex">{children}</div>{md}</Flg>
@@ -36,7 +36,7 @@ Flag.defaultProps = {
 Flag.propTypes = {
 	as: PropTypes.node,
 	className: PropTypes.string,
-	media: PropTypes.object,
+	image: PropTypes.object,
 	top: PropTypes.bool,
 	reversed: PropTypes.bool,
 	bottom: PropTypes.bool,
