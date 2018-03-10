@@ -27,6 +27,52 @@
 			.c-modal-overlay{
 				position: relative !important;
 			}
+			
+			div[class^='rsg--sidebar'], div[class*=' rsg--sidebar']{
+				min-width: 300px;
+			}
+			
+			h1[class^='rsg--logo'], h1[class*=' rsg--logo']{
+				white-space: nowrap;
+				vertical-align: middle;
+				color: #fff;
+				font-weight: 600;
+				font-style: italic;
+				font-size: 1.5rem;
+			}
+			
+			div[class^='rsg--logo'], div[class*=' rsg--logo']{
+				background-color: #638dd4;
+			}
+			
+			h1[class^='rsg--logo']:after, h1[class*=' rsg--logo']:after{
+				vertical-align: middle;
+				margin-left: 0.5rem;
+				position: relative;
+				top: -0.25rem;
+				content: "";
+				height: 3rem;
+				width: 3rem;
+				display: inline-block;
+				background-image: url('./react-scooter-inverted.svg');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				float: right;
+			}
+			
+			.CodeMirror-code .CodeMirror-line span.cm-bracket, .CodeMirror-code .CodeMirror-line span.cm-tag{
+				color: #638dd4;
+			}
+			
+			.CodeMirror-code .CodeMirror-line span.cm-string{
+				color: #48ac68;
+			}
+			
+			.CodeMirror-code .CodeMirror-line span.cm-attribute{
+				color: #e82110;
+			}
+			
 		</style>
 	</head>
 	<body>
