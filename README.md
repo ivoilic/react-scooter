@@ -10,7 +10,7 @@ React components for the Scooter CSS framework
 - Docs: https://ivoilic.github.io/react-scooter/
 - Scooter Repo: https://github.com/dropbox/scooter/
 - Scooter Docs: https://dropbox.github.io/scooter/
-- NPM: COMING SOON!
+- NPM: https://www.npmjs.com/package/react-scooter
 
 ## Installation
 
