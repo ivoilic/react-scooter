@@ -1,7 +1,9 @@
 <img align="right" width="200" src="https://raw.githubusercontent.com/ivoilic/react-scooter/master/react-scooter.png"/>
 
 # React-Scooter
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/ivoilic/react-scooter/blob/master/LICENSE) [![Dependency Status](https://img.shields.io/david/ivoilic/react-scooter.svg?style=flat)](https://david-dm.org/ivoilic/react-scooter)
+[![npm Version](https://img.shields.io/npm/v/react-scooter.svg?style=flat)](https://www.npmjs.org/package/react-scooter)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/ivoilic/react-scooter/blob/master/LICENSE)
+[![Dependency Status](https://img.shields.io/david/ivoilic/react-scooter.svg?style=flat)](https://david-dm.org/ivoilic/react-scooter)
 
 React components for the Scooter CSS framework
 
@@ -13,7 +15,7 @@ React components for the Scooter CSS framework
 ## Installation
 
 ```bash
-npm install react-scooter [COMING SOON!]
+npm install react-scooter
 ```
 
 ## Usage
