@@ -1,6 +1,6 @@
 {
   "name": "react-scooter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://ivoilic.github.io/react-scooter",
   "author": "Ivo Ilić <admin@ivoilic.com> (http://ivoilic.com)",
   "description": "React components for the Scooter CSS framework",
@@ -24,7 +24,7 @@
     "react",
     "ui",
     "ui-kit",
-	"dropbox"
+    "dropbox"
   ],
   "bugs": {
     "url": "https://github.com/ivoilic/react-scooter/issues"
