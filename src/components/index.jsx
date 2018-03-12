@@ -1,5 +1,3 @@
-import '../assets/css/demo.css'
-
 export { default as Avatar } from './Avatar/Avatar.jsx'
 export { default as Badge } from './Badge/Badge.jsx'
 export { default as Banner } from './Banner/Banner.jsx'

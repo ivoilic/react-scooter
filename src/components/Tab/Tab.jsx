@@ -13,7 +13,7 @@ const Tab = ({
 	  "is-active": active
   },className)
   
-  return <Tb className={classes} {...props}><button role="tab" aria-selected={active} tabindex={(active ? 0 : -1)}>{children}</button></Tb>
+  return <Tb className={classes} {...props}><button role="tab" aria-selected={active} tabIndex={(active ? 0 : -1)}>{children}</button></Tb>
 }
 
 Tab.displayName = 'Tab'

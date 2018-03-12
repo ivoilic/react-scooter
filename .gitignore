@@ -9,3 +9,5 @@ yarn-error.log*
 styleguide
 node_modules
 lib
+src/components/demo.jsx
+src/assets
