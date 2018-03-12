@@ -43,3 +43,5 @@ Scooter is the work of Dropbox and was released under the Apache 2.0 License.
 React is the work of Facebook and was released under the MIT License.
 
 This repository contains neither Scooter or React which must be installed seperately.
+
+Thank you to kulakowka on github for his react-bulma repo that inspired and guided me.
