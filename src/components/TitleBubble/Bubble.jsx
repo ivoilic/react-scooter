@@ -5,20 +5,11 @@ import classNames from 'classnames'
 const Bubble = ({
 	as: TtlBbbl,
 	className,
-	n,
-	w,
-	e,
-	s,
+	arrow,
 	title,
 	...props
 }) => {
-  const classes = classNames('c-title-bubble', {
-	'c-title-bubble--n': n,
-	'c-title-bubble--w': w,
-	'c-title-bubble--e': e,
-	'c-title-bubble--s': s,
-	
-  }, className)
+  const classes = classNames('c-title-bubble', arrow ? 'c-title-bubble--'+arrow : "", className)
   
   return <TtlBbbl className={classes} {...props} data-title={title}/>
 }
@@ -33,10 +24,7 @@ Bubble.propTypes = {
 	as: PropTypes.node,
 	className: PropTypes.string,
 	title: PropTypes.string,
-	n: PropTypes.bool,
-	w: PropTypes.bool,
-	e: PropTypes.bool,
-	s: PropTypes.bool,
+	arrow: PropTypes.string
 }
 
 export default Bubble

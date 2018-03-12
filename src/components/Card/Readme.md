@@ -11,24 +11,24 @@
 	</div>
 
 	<div class="u-mar-bottom-m">
-	  <Card arrow nw>
+	  <Card arrow="nw">
 		<p class="u-mar-bottom-s">This is a card with a Northwest arrow. <br/>You can nest components, you know.</p>
 		<button class="c-btn c-btn--primary">Wow cool</button>
 	  </Card>
 
-	  <Card arrow ne>
+	  <Card arrow="ne">
 		This is a card with a Northeast arrow.
 	 </Card>
 	</div>
 
 	<div class="u-mar-bottom-m">
-	  <Card arrow s>
+	  <Card arrow="s">
 		South arrow
 	  </Card>
-	  <Card arrow sw>
+	  <Card arrow="sw">
 		Southwest arrow
 	  </Card>
-	  <Card arrow se>
+	  <Card arrow="se">
 		Southeast arrow
 	  </Card>
 	</div>

@@ -7,13 +7,10 @@ const Calendar = ({
 	className,
 	title,
 	dates,
+	children,
 	...props
 }) => {
   const classes = classNames('c-calendar','c-card', 'u-pad-xs', className)
-  
-  const dts = Object.keys(dates).map(key => 
-		<td><button className="c-calendar__date c-calendar__date--disabled" disabled={dates[key].disabled ? dates[key].disabled : false} key={key}>{dates[key].d}</button></td>
-    )
   
   return <Clndr className="c-calendar c-card u-pad-xs" className={classes} {...props}>
     <nav className="c-calendar__nav  u-cf u-font-center u-mar-bottom-s">
@@ -39,7 +36,7 @@ const Calendar = ({
         </tr>
       </thead>
       <tbody>
-<tr>{dts}</tr>
+<tr>{children}</tr>
 		  	</tbody>
     		</table>
 		</Clndr>
@@ -55,8 +52,7 @@ Calendar.defaultProps = {
 Calendar.propTypes = {
 	as: PropTypes.node,
 	className: PropTypes.string,
-	title: PropTypes.string,
-	dates: PropTypes.object
+	title: PropTypes.string
 }
 
 export default Calendar

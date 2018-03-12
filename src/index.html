@@ -28,10 +28,6 @@
 				position: relative !important;
 			}
 			
-			div[class^='rsg--sidebar'], div[class*=' rsg--sidebar']{
-				min-width: 300px;
-			}
-			
 			h1[class^='rsg--logo'], h1[class*=' rsg--logo']{
 				white-space: nowrap;
 				vertical-align: middle;
@@ -39,6 +35,13 @@
 				font-weight: 600;
 				font-style: italic;
 				font-size: 1.5rem;
+			}
+			
+			
+			@media (min-width: 1350px){
+				div[class^='rsg--sidebar'], div[class*=' rsg--sidebar']{
+					min-width: 300px;
+				}
 			}
 			
 			div[class^='rsg--logo'], div[class*=' rsg--logo']{
@@ -54,11 +57,23 @@
 				height: 3rem;
 				width: 3rem;
 				display: inline-block;
-				background-image: url('./src/assets/images/react-scooter-inverted.svg');
+				background-image: url('//raw.githubusercontent.com/ivoilic/react-scooter/master/react-scooter-inverted.png');
 				background-size: contain;
 				background-position: center;
 				background-repeat: no-repeat;
 				float: right;
+			}
+			
+			@media (max-width: 1350px){
+				h1[class^='rsg--logo']:after, h1[class*=' rsg--logo']:after{
+					display: none;
+				}
+			}
+			
+			@media (max-width: 600px){
+				h1[class^='rsg--logo']:after, h1[class*=' rsg--logo']:after{
+					display: inline-block;
+				}
 			}
 			
 			.CodeMirror-code .CodeMirror-line span.cm-bracket, .CodeMirror-code .CodeMirror-line span.cm-tag{

@@ -1,9 +1,9 @@
 {
   "name": "react-scooter",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "homepage": "https://ivoilic.github.io/react-scooter",
   "author": "Ivo Ilić <admin@ivoilic.com> (http://ivoilic.com)",
-  "description": "[WIP] React components for the Scooter CSS framework",
+  "description": "React components for the Scooter CSS framework",
   "contributors": [
     {
       "name": "Ivo Ilić",

@@ -11,3 +11,4 @@ node_modules
 lib
 src/components/demo.jsx
 src/assets
+src/index.html
